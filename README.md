@@ -28,6 +28,8 @@ Comparators form the basic building blocks in various circuits such as ADCs. The
 ## 4. Detailed working of the circuit
 
 ## 5. Simulation Analysis
+![waveforms](https://user-images.githubusercontent.com/100681789/156207907-844ddd40-1cc0-4f32-b97b-2c1701eb217c.PNG)
+> Fig 3: Simulation Wave forms
 
 ## 6. Netlist
 Attaching is the final netlist of the design here:  
