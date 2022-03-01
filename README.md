@@ -22,7 +22,7 @@ Comparators form the basic building blocks in various circuits such as ADCs. The
 ![schematic1](https://user-images.githubusercontent.com/100681789/156205522-f48f84fb-8053-4612-a2f7-552bcb79c722.PNG)
 > Fig 1: Schematic of Comparator
 
-![schematic2](https://user-images.githubusercontent.com/100681789/156205674-27aadd9d-e23e-4ce7-a8c8-981f87ce633c.PNG)
+![schematic2](https://user-images.githubusercontent.com/100681789/156206359-f38b6700-60f2-44f6-9794-ddf01f09b55a.PNG)
 > Fig 2: Schematic of SR Latch
 
 ## 4. Detailed working of the circuit
