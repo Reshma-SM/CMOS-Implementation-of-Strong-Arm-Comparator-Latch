@@ -29,17 +29,21 @@ Comparators form the basic building blocks in various circuits such as ADCs. The
 ## 4. Detailed working of the circuit
 
 ## 5. Simulation Analysis
+A pulse wave of 1GHz was set as the circuit clock. The circuit Vdd was given as 1.05V. A constant voltage of 0.5V was supplied at input terminal 2. A varying voltage source was given in terminal 1. 
+
 ![waveforms](https://user-images.githubusercontent.com/100681789/156207907-844ddd40-1cc0-4f32-b97b-2c1701eb217c.PNG)
 > Fig 3: Simulation Wave forms
 
 ***1. Delay:*** Delay of the circuit is obtained as 0.2 ns. It is clear from the comparison between waveforms CLK high and output A switch.
+
 ![Delay](https://user-images.githubusercontent.com/100681789/156210610-aad99c10-26e4-46df-8c07-4ae13edc2e2b.PNG)
 > Fig 4: Delay of circuit
 
 ***2. Offset Voltage*** There was no offset voltage observed. Similiar inputs were given on both the input terminals and the output was observed. There were no significant voltages variations observed at the output.
 
 ## 6. Netlist
-Attaching is the final netlist of the design here:  
+Attaching is the final netlist of the design here:  [netlist.txt](https://github.com/Reshma-SM/CMOS-Implementation-of-Strong-Arm-Comparator-Latch/files/8163446/netlist.txt)
+
 
 ## 7. Acknowledgements
 I express my special thanks to Kunal Ghosh, the Co-Founder of VLSI System Design, Corp. Pvt. Ltd. for coordinating this event and making it a grand success. I have acheived a great amount of knowledge by participating in this event. Thank you Chinmay panda and Sameer Durgoji for the quick guidance and support. I would also like to extend my sincere gratitude to Synopsys India, for making this event possible. Lastly, thanking IIT Hyderabad for this oppurtunity.
