@@ -29,23 +29,25 @@ The pmos of inverters were sized double the nmos, 0.4um and 0.2um respectively. 
 ![schematic2](https://user-images.githubusercontent.com/100681789/156206359-f38b6700-60f2-44f6-9794-ddf01f09b55a.PNG)
 > Fig 2: Schematic of SR Latch
 
-## 4. Detailed working of the circuit
+## 4. Working of the circuit
+
+when CK is enabled, the nodes P, Q, X, and Y gets charged to VDD. We denote the capacitances at these nodes by CP, CQ, CX, and CY, respectively, and assume that CP = CQ and CX = CY. When CK goes high, M1 and M2 act as a differential pair with capacitive loads, and VP and VQ fall from VDD while yielding a differential component proportional to Vin1 - Vin2. This mode continues until VP and VQ drop to roughly VDD - VTH3,4. At the end of this mode, M3 and M4 turn on, causing VX and VY to fall until M5 and M6 are activated. One output is then pulled back to VDD by M5 or M6 while the other falls to zero. The role of M3 and M4 is to cut the current path from VDD to the ground after the comparator has made a decision.
 
 ## 5. Simulation Analysis
 A pulse wave of 1GHz was set as the circuit clock. The circuit Vdd was given as 1.05V. A constant voltage of 0.5V was supplied at input terminal 2. A voltage varying between 0.45 and 0.55 was sourced in terminal 1. X and Y plot represents the unlatched outputs of the circuit. A and B is Q and Q! of the latched output.
 
 ![sr_latch_tt](https://user-images.githubusercontent.com/100681789/156220968-46b9c5d0-c609-4f05-93cf-2e8d6c5a6263.png)
-> Fig : SR latch truth table
+> Fig 3: SR latch truth table
 
 When input1 < input2 , comparator output is 0, which is inverted to high, to be the set input of SR Latch, thus getting a high output at A terminal. And when input1 > input2, comparator outputs 1, which is inverted to low, to set a ) to the set input of SR latch. This generates a low output at the output terminal A. The above truth table supports the obtained result.
 
 ![waveforms](https://user-images.githubusercontent.com/100681789/156207907-844ddd40-1cc0-4f32-b97b-2c1701eb217c.PNG)
-> Fig 3: Simulation Wave forms
+> Fig 4: Simulation Wave forms
 
 ***1. Delay:*** Delay of the circuit is obtained as 0.2 ns. It is clear from the comparison between waveforms CLK high and output A switch.
 
 ![Delay](https://user-images.githubusercontent.com/100681789/156210610-aad99c10-26e4-46df-8c07-4ae13edc2e2b.PNG)
-> Fig 4: Delay of circuit
+> Fig 5: Delay of circuit
 
 ***2. Offset Voltage*** There was no offset voltage observed. Similiar inputs were given on both the input terminals and the output was observed. There were no significant voltages variations observed at the output.
 
