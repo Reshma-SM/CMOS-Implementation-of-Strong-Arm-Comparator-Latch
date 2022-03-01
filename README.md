@@ -19,9 +19,12 @@ Comparators form the basic building blocks in various circuits such as ADCs. The
 2. **Synopsys PrimeSim** was used to plot the resultant transient analysis waveforms.
 
 ## 3. Schematic
+Most of the design effort is expended on selecting the transistor dimensions. A width dimension of 0.5um was used for clocked transistors S1-4. Transistors M1-4 were given a width of 10um, M5-6 2.5um and M7 2um. 
 
 ![schematic1](https://user-images.githubusercontent.com/100681789/156213491-adc00e85-9e33-4a70-9201-00b9eaedbab1.PNG)
 > Fig 1: Schematic of Comparator
+
+The pmos of inverters were sized double the nmos, 0.4um and 0.2um respectively. All the pmos in the SR Latch circuit were built at 0.4um width.
 
 ![schematic2](https://user-images.githubusercontent.com/100681789/156206359-f38b6700-60f2-44f6-9794-ddf01f09b55a.PNG)
 > Fig 2: Schematic of SR Latch
