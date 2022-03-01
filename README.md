@@ -31,7 +31,8 @@ The pmos of inverters were sized double the nmos, 0.4um and 0.2um respectively. 
 
 ## 4. Working of the circuit
 
-when CK is enabled, the nodes P, Q, X, and Y gets charged to VDD. We denote the capacitances at these nodes by CP, CQ, CX, and CY, respectively, and assume that CP = CQ and CX = CY. When CK goes high, M1 and M2 act as a differential pair with capacitive loads, and VP and VQ fall from VDD while yielding a differential component proportional to Vin1 - Vin2. This mode continues until VP and VQ drop to roughly VDD - VTH3,4. At the end of this mode, M3 and M4 turn on, causing VX and VY to fall until M5 and M6 are activated. One output is then pulled back to VDD by M5 or M6 while the other falls to zero. The role of M3 and M4 is to cut the current path from VDD to the ground after the comparator has made a decision.
+When CK is enabled, the nodes P, Q, X, and Y gets charged to VDD. We denote the capacitances at these nodes by CP, CQ, CX, and CY, respectively, and assume that CP = CQ and CX = CY. When CK goes high, M1 and M2 act as a differential pair with capacitive loads, and VP and VQ fall from VDD while yielding a differential component proportional to Vin1 - Vin2. This mode continues until VP and VQ drop to roughly VDD - VTH3,4. At the end of this mode, M3 and M4 turn on, causing VX and VY to fall until M5 and M6 are activated. One output is then pulled back to VDD by M5 or M6 while the other falls to zero. The role of M3 and M4 is to cut the current path from VDD to the ground after the comparator has made a decision. 
+In the precharge mode, that is when the clock is low, the Strong-Arm comparator’s decision is erased, and the outputs do not represent a valid logical level, potentially confusing the following stages. To resolve this issue, a reset-set (RS) latch is inserted in the output path. As illustrated in Figure 2, the RS latch can change its state only when VX or VY falls to zero. This latch then retains the state as the Strong Arm circuit enters the precharge mode.
 
 ## 5. Simulation Analysis
 A pulse wave of 1GHz was set as the circuit clock. The circuit Vdd was given as 1.05V. A constant voltage of 0.5V was supplied at input terminal 2. A voltage varying between 0.45 and 0.55 was sourced in terminal 1. X and Y plot represents the unlatched outputs of the circuit. A and B is Q and Q! of the latched output.
@@ -39,7 +40,7 @@ A pulse wave of 1GHz was set as the circuit clock. The circuit Vdd was given as 
 ![sr_latch_tt](https://user-images.githubusercontent.com/100681789/156220968-46b9c5d0-c609-4f05-93cf-2e8d6c5a6263.png)
 > Fig 3: SR latch truth table
 
-When input1 < input2 , comparator output is 0, which is inverted to high, to be the set input of SR Latch, thus getting a high output at A terminal. And when input1 > input2, comparator outputs 1, which is inverted to low, to set a ) to the set input of SR latch. This generates a low output at the output terminal A. The above truth table supports the obtained result.
+When input1 < input2 , comparator output is 0, which is inverted to high, to be the set input of SR Latch, thus getting a high output at A terminal. And when input1 > input2, comparator outputs 1, which is inverted to low, which reaches the set input of SR latch. This generates a low output at the output terminal A. The above truth table supports the obtained result.
 
 ![waveforms](https://user-images.githubusercontent.com/100681789/156207907-844ddd40-1cc0-4f32-b97b-2c1701eb217c.PNG)
 > Fig 4: Simulation Wave forms
@@ -53,7 +54,6 @@ When input1 < input2 , comparator output is 0, which is inverted to high, to be 
 
 ## 6. Netlist
 Attaching is the final netlist of the design here:  [netlist.txt](https://github.com/Reshma-SM/CMOS-Implementation-of-Strong-Arm-Comparator-Latch/files/8163446/netlist.txt)
-
 
 ## 7. Acknowledgements
 I express my special thanks to Kunal Ghosh, the Co-Founder of VLSI System Design, Corp. Pvt. Ltd. for coordinating this event and making it a grand success. I have acheived a great amount of knowledge by participating in this event. Thank you Chinmay panda and Sameer Durgoji for the quick guidance and support. I would also like to extend my sincere gratitude to Synopsys India, for making this event possible. Lastly, thanking IIT Hyderabad for this oppurtunity.
