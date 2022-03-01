@@ -19,6 +19,11 @@ Comparators form the basic building blocks in various circuits such as ADCs. The
 2. **Synopsys PrimeSim** was used to plot the resultant transient analysis waveforms.
 
 ## 3. Schematic
+![schematic1](https://user-images.githubusercontent.com/100681789/156205522-f48f84fb-8053-4612-a2f7-552bcb79c722.PNG)
+> Fig 1: Schematic of Comparator
+
+![schematic2](https://user-images.githubusercontent.com/100681789/156205674-27aadd9d-e23e-4ce7-a8c8-981f87ce633c.PNG)
+> Fig 2: Schematic of SR Latch
 
 ## 4. Detailed working of the circuit
 
