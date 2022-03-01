@@ -11,7 +11,7 @@ This repository represents the CMOS implementation of a Comparator circuit with 
 ### 8. Reference
 
 ## 1. Abstract
-Comparators form the basic building blocks in various circuits such as ADCs. The scope of this project is to design a comparator with an output SR Latch to latch the outputs obtained to fixed values. A comparator senses a differential input and generates a logical output according to the polarity of the input difference. Here, a Strong Arm Latch has been selected as the comparator core. This topology offers desirable attributes like operating in a single clock phase, drawing zero static power.
+Comparators form the basic building blocks in various circuits such as ADCs. The scope of this project is to design a comparator with an output SR Latch to latch the outputs obtained to fixed values. A comparator senses a differential input and generates a logical output according to the polarity of the input difference. Here, a Strong Arm Latch has been selected as the comparator core. This topology offers desirable attributes like operating in a single clock phase, drawing zero static power. The circuit was implemented using Synopsys 28nm PDK.
 
 ## 2. Tools used
 1. **Synopsys Custom Compiler** was used to draw the transistor level schematic diagram of the design.
