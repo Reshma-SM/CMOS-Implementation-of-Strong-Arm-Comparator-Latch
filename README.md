@@ -19,7 +19,8 @@ Comparators form the basic building blocks in various circuits such as ADCs. The
 2. **Synopsys PrimeSim** was used to plot the resultant transient analysis waveforms.
 
 ## 3. Schematic
-![schematic1](https://user-images.githubusercontent.com/100681789/156205522-f48f84fb-8053-4612-a2f7-552bcb79c722.PNG)
+
+![schematic1](https://user-images.githubusercontent.com/100681789/156213491-adc00e85-9e33-4a70-9201-00b9eaedbab1.PNG)
 > Fig 1: Schematic of Comparator
 
 ![schematic2](https://user-images.githubusercontent.com/100681789/156206359-f38b6700-60f2-44f6-9794-ddf01f09b55a.PNG)
@@ -31,9 +32,11 @@ Comparators form the basic building blocks in various circuits such as ADCs. The
 ![waveforms](https://user-images.githubusercontent.com/100681789/156207907-844ddd40-1cc0-4f32-b97b-2c1701eb217c.PNG)
 > Fig 3: Simulation Wave forms
 
-Delay of the circuit is obtained as 0.2 ns. It is clear from the comparison between waveforms CLK high and output A switch.
+***1. Delay:*** Delay of the circuit is obtained as 0.2 ns. It is clear from the comparison between waveforms CLK high and output A switch.
 ![Delay](https://user-images.githubusercontent.com/100681789/156210610-aad99c10-26e4-46df-8c07-4ae13edc2e2b.PNG)
 > Fig 4: Delay of circuit
+
+***2. Offset Voltage*** There was no offset voltage observed. Similiar inputs were given on both the input terminals and the output was observed. There were no significant voltages variations observed at the output.
 
 ## 6. Netlist
 Attaching is the final netlist of the design here:  
