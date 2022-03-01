@@ -4,7 +4,7 @@ This repository represents the CMOS implementation of a Comparator circuit with 
 ### 1. Abstract
 ### 2. Tools Used
 ### 3. Schematic
-### 4. Detailed working of the circuit
+### 4. Working of the circuit
 ### 5. Simulation Analysis
 ### 6. Netlist
 ### 7. Acknowledgements
