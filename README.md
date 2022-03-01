@@ -29,7 +29,7 @@ Comparators form the basic building blocks in various circuits such as ADCs. The
 ## 4. Detailed working of the circuit
 
 ## 5. Simulation Analysis
-A pulse wave of 1GHz was set as the circuit clock. The circuit Vdd was given as 1.05V. A constant voltage of 0.5V was supplied at input terminal 2. A varying voltage source was given in terminal 1. 
+A pulse wave of 1GHz was set as the circuit clock. The circuit Vdd was given as 1.05V. A constant voltage of 0.5V was supplied at input terminal 2. A voltage varying between 0.45 and 0.55 was sourced in terminal 1. X and Y plot represents the unlatched outputs of the circuit. A and B is Q and Q! of the latched output. When 
 
 ![waveforms](https://user-images.githubusercontent.com/100681789/156207907-844ddd40-1cc0-4f32-b97b-2c1701eb217c.PNG)
 > Fig 3: Simulation Wave forms
